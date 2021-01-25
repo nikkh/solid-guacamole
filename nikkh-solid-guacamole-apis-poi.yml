@@ -1,8 +1,13 @@
 pr:
   branches:
-    include: [main] # branch names which will trigger a build
+    include:
+    - main
+    - releases/*
   paths:
-    include: [apis/poi] # file paths which must match to trigger a build
+    include:
+    - apis/poi
+    exclude:
+    - docs/README.md
       
 trigger:
   branches:
