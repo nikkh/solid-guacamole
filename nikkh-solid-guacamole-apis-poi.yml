@@ -1,11 +1,11 @@
-trigger:
-  pr:
+pr:
     autoCancel: true # indicates whether additional pushes to a PR should cancel in-progress runs for the same PR. Defaults to true
     branches:
       include: main # branch names which will trigger a build
     paths:
       include: apis/poi # file paths which must match to trigger a build
-
+      
+trigger:
   branches:
     include:
     - main
