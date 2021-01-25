@@ -1,3 +1,14 @@
+pr:
+  branches:
+    include:
+    - main
+    - releases/*
+  paths:
+    include:
+    - apis/userprofile
+    exclude:
+    - docs/README.md
+
 trigger:
   branches:
     include:
